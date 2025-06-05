@@ -7,12 +7,9 @@ Jedes Textmodul besteht aus einem eindeutigen `title` und einem frei definierbar
 ## 🚀 Features
 
 - CRUD-API für Textmodule
-- `title`-Feld ist **eindeutig**
-- PostgreSQL als Datenbank
-- Docker-basiertes Setup
 - OpenAPI-Dokumentation (`/docs`)
 
-## 🚀 Projekt starten
+## ⚙️ Getting started
 
 // TODO
 
