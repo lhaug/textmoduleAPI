@@ -3,7 +3,7 @@ from . import models, schemas
 from fastapi import HTTPException
 
 def get_textmodules(db: Session):
-    return db.query(models.Textmodule).all()
+    return db.query(models.Textmodule).order_by(models.Textmodule.id.asc()).all()
 
 def get_textmodule(db: Session, module_id: int):
     return db.query(models.Textmodule).filter(models.Textmodule.id == module_id).first()
