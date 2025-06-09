@@ -25,13 +25,15 @@ Then start the container with the following command in the project folder:
 
 ```docker-compose up --build```
 
-### ⚡ 2.1 using the interactive SwaggerUI 
+### ⚡ 2.1 using the interactive SwaggerUI
 
 call [localhost:8000/docs#/](http://localhost:8000/docs#/)
 
+<img width="1440" alt="OpenAPI" src="https://github.com/user-attachments/assets/3a63e895-6484-4db6-b70d-53ae9a41aeb5" />
+
 or 
 
-### 🖥️ 2.2 using the simple electron GUI
+### 🖥️ 2.2 using the simple GUI
 
 run the following commands in the project folder:
 
@@ -40,6 +42,8 @@ run the following commands in the project folder:
 ```npm install```
 
 ```npm start```
+
+<img width="802" alt="textmoduleManager" src="https://github.com/user-attachments/assets/daf9094f-d39a-4290-b69b-64f71f8c1e49" />
 
 ## 🛑 Shut Down
 
