@@ -14,12 +14,13 @@ services:
       timeout: 5s
       retries: 5
 
-  web:
-    build: .
+  backend:
+    build:
+      context: ./BE
     ports:
       - "8000:8000"
     volumes:
-      - .:/app
+      - ./BE:/app
     depends_on:
       db:
         condition: service_healthy
