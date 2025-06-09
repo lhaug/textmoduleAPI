@@ -1,7 +1,10 @@
 # 🧩 Textmodule API (Python 3 + PostgreSQL + Docker)
 
-Eine containerisierte RESTful API für die Verwaltung von Textmodulen mit FastAPI, PostgreSQL und Docker. 
-Jedes Textmodul besteht aus einem eindeutigen `title` und einem frei definierbaren `content` und Metadaten wie dem `creation_date` und dem `last_changed_date`.
+This is a containerised RESTful API for managing text modules, built using FastAPI, PostgreSQL and Docker.
+A simple GUI is available using Electron.
+Each text module consists of a unique title and freely definable content, as well as automatically created metadata such as an identification number, creation date and last modification date.
+
+The API was intentionally kept simple to make it universally applicable. If user management exists, the creator could be attached to each text module. Depending on the context, the component can be extended as required with additional features such as categories, versions or languages.
 
 ---
 ## ✨ Features
