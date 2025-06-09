@@ -23,7 +23,7 @@ Open Docker on your machine.
 
 Then start the container with the following command in the project folder: 
 
-```docker-compose up --build```
+```docker-compose up --build``` or ```docker compose up --build```
 
 ### ⚡ 2.1 using the interactive SwaggerUI
 
@@ -49,4 +49,4 @@ run the following commands in the project folder:
 
 Shutting down the container, this also deletes the database and all entrys with the following command:
 
-```docker-compose down -v```
+```docker-compose down -v``` or ```docker compose down -v```
