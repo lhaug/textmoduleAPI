@@ -13,15 +13,23 @@ Jedes Textmodul besteht aus einem eindeutigen `title` und einem frei definierbar
 Open Docker on your machine.
 Then start the container with: 
 
-``` docker-compose up --build ```
+```docker-compose up --build```
 
-⚡ call [localhost:8000/docs#/](http://localhost:8000/docs#/) and use interactive OpenAPI
+### ⚡ using the interactive SwaggerUI 
+call [localhost:8000/docs#/](http://localhost:8000/docs#/)
+
+or 
+
+### 🖥️ using the GUI
+```cd FE/electron```
+```npm install```
+```npm start```
 
 ## 🛑 Shut Down
 
 Shutting down the container, this also deletes the database and all entrys with:
 
-``` docker-compose down -v ```
+```docker-compose down -v```
 
 
 
