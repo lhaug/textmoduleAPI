@@ -20,7 +20,7 @@ call [localhost:8000/docs#/](http://localhost:8000/docs#/)
 
 or 
 
-### 🖥️ using the GUI
+### 🖥️ using a simple GUI
 ```cd FE/electron```
 
 ```npm install```
