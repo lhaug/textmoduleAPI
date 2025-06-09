@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>
+  <meta charset="UTF-8">
+  <title>Textmodule Manager</title>
+</head>
+<body>
+  <h1>Textmodule</h1>
+
+  <form id="create-form">
+    <input type="text" id="title" placeholder="Title" required />
+    <input type="text" id="content" placeholder="Content" required />
+    <button type="submit">Hinzufügen</button>
+  </form>
+  <br>
+  <table style="width:100%">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Created</th>
+      <th>Updated</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody id="modules-table-body"></tbody>
+</table>
+
+
+  <script src="renderer.js"></script>
+
+  <!-- Update Module -->
+<div id="edit-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background-color:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:1000;">
+  <div style="background:white; padding:20px; border-radius:8px; min-width:300px;">
+    <h3>Textmodul bearbeiten</h3>
+    <input id="edit-title" type="text" placeholder="Titel" style="width:100%; margin-bottom:10px;">
+    <textarea id="edit-content" placeholder="Inhalt" style="width:100%; height:100px;"></textarea>
+    <div style="margin-top:10px; text-align:right;">
+      <button id="cancel-edit">Abbrechen</button>
+      <button id="save-edit">Speichern</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
