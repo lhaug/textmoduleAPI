@@ -22,7 +22,9 @@ or
 
 ### 🖥️ using the GUI
 ```cd FE/electron```
+
 ```npm install```
+
 ```npm start```
 
 ## 🛑 Shut Down
