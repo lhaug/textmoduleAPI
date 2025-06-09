@@ -1,10 +1,31 @@
-version: "3"
-
 services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: textmodules
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 3s
+      timeout: 5s
+      retries: 5
 
-  web: 
+  web:
     build: .
-    ports: 
-      - 8000:8000
+    ports:
+      - "8000:8000"
     volumes:
       - .:/app
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - TZ=Europe/Berlin
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/textmodules
+
+volumes:
+  pgdata:

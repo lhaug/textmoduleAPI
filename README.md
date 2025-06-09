@@ -10,8 +10,19 @@ Jedes Textmodul besteht aus einem eindeutigen `title` und einem frei definierbar
 - OpenAPI-Dokumentation (`/docs`)
 
 ## ⚙️ Getting started
+Open Docker on your machine.
+Starting the container : 
 
-// TODO
+``` docker-compose up --build ```
+
+⚡ call [localhost:8000/docs#/](http://localhost:8000/docs#/) and use interactive OpenAPI
+
+## Closing the session
+
+Cloding the container, this also deletes the database with all entrys:
+
+``` docker-compose down -v ```
+
 
 
 
