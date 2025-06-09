@@ -13,11 +13,15 @@ The API was intentionally kept simple to make it universally applicable. If user
 - OpenAPI-Documentation (Swagger)
 - Simple electron GUI
 
-## 🚀 1. Getting started
+## 🚀 Getting started
+
+### 1. Start the container
+
+Clone this project.
 
 Open Docker on your machine.
 
-Then start the container with: 
+Then start the container with the following command in the project folder: 
 
 ```docker-compose up --build```
 
@@ -29,7 +33,7 @@ or
 
 ### 🖥️ 2.2 using the simple electron GUI
 
-run the following commands in the project folder
+run the following commands in the project folder:
 
 ```cd FE/electron```
 
@@ -39,6 +43,6 @@ run the following commands in the project folder
 
 ## 🛑 Shut Down
 
-Shutting down the container, this also deletes the database and all entrys with:
+Shutting down the container, this also deletes the database and all entrys with the following command:
 
 ```docker-compose down -v```
