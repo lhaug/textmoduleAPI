@@ -9,21 +9,28 @@ The API was intentionally kept simple to make it universally applicable. If user
 ---
 ## ✨ Features
 
-- CRUD-API für Textmodule
-- OpenAPI-Dokumentation (`/docs`)
+- CRUD-API for text modules
+- OpenAPI-Documentation (Swagger)
+- Simple electron GUI
 
-## 🚀 Getting started
+## 🚀 1. Getting started
+
 Open Docker on your machine.
+
 Then start the container with: 
 
 ```docker-compose up --build```
 
-### ⚡ using the interactive SwaggerUI 
+### ⚡ 2.1 using the interactive SwaggerUI 
+
 call [localhost:8000/docs#/](http://localhost:8000/docs#/)
 
 or 
 
-### 🖥️ using a simple GUI
+### 🖥️ 2.2 using the simple electron GUI
+
+run the following commands in the project folder
+
 ```cd FE/electron```
 
 ```npm install```
@@ -35,7 +42,3 @@ or
 Shutting down the container, this also deletes the database and all entrys with:
 
 ```docker-compose down -v```
-
-
-
-
